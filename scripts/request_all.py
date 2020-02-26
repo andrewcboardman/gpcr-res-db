@@ -105,7 +105,7 @@ def request_alignments():
         print('Alignments downloaded')
 
 def merge_alignments_labels():
-    if os.path.exists('data/merged_alignments_labels.csv'):
+    if os.path.exists('data/gpcr_label_align.csv'):
         print('Alignment and labels already merged. Skipping...')
     else:        
         labels = pd.read_csv('data/gpcr_reslabels.csv')
